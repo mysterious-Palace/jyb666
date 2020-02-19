@@ -11,7 +11,8 @@
   if (b64_md5(password) != "s8daZVea5RQzjZ29g0wIsg" || hex_md5(password) != "b3c75a65579ae514338d9dbd834c08b2")   
   {
     alert("密码不正确,无法进入!");
-    history.go(-1);
+    window.opener=null; 
+    window.close();
   }  
 </script>
 <head>
