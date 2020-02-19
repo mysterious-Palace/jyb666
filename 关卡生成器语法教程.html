@@ -17,8 +17,9 @@
   )   
   {
     alert("密码不正确,无法进入!");
-    window.opener=null; 
-    window.close();
+    history.go(-1);
+    //window.opener=null; 
+    //window.close();
   } 
 </script>
 <head>
